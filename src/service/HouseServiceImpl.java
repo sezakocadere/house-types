@@ -20,6 +20,7 @@ public class HouseServiceImpl implements HouseService {
 
     @Override
     public List<House> filterHousesByRoomNumbers(List<House> houses, int numberOfRoom, int numberOfLivingRoom) {
+        // returns by filters all types of houses according to the given numbers of room and living room
         return houses.stream().filter(house -> house.getNumberOfRoom() == numberOfRoom && house.getNumberOfLivingRoom() == numberOfLivingRoom).collect(Collectors.toList());
     }
 }
