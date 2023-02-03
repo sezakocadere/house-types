@@ -1,4 +1,5 @@
 import entity.House;
+import service.HouseService;
 import service.HouseServiceImpl;
 import util.HouseDataUtility;
 
@@ -11,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
         HouseDataUtility houseData = new HouseDataUtility();
-        HouseServiceImpl houseService = new HouseServiceImpl();
+        HouseService houseService = new HouseServiceImpl();
         List<House> homes = houseData.getHomes();
         List<House> summerHouses = houseData.getSummerHouses();
         List<House> villas = houseData.getVillas();
